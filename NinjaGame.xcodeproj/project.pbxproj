@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1945BF51196C5484003BFA17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1945BF50196C5484003BFA17 /* AppDelegate.swift */; };
-		1945BF53196C5484003BFA17 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1945BF52196C5484003BFA17 /* GameScene.sks */; };
 		1945BF55196C5484003BFA17 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1945BF54196C5484003BFA17 /* GameScene.swift */; };
 		1945BF57196C5484003BFA17 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1945BF56196C5484003BFA17 /* GameViewController.swift */; };
 		1945BF5A196C5484003BFA17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1945BF58196C5484003BFA17 /* Main.storyboard */; };
 		1945BF5C196C5484003BFA17 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1945BF5B196C5484003BFA17 /* Images.xcassets */; };
 		1945BF68196C5484003BFA17 /* NinjaGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1945BF67196C5484003BFA17 /* NinjaGameTests.swift */; };
+		1945BF72196D4C00003BFA17 /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 1945BF71196D4C00003BFA17 /* sprites.atlas */; };
+		195185D1196E9CC000BC124F /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195185D0196E9CC000BC124F /* GameOverScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +31,6 @@
 		1945BF4B196C5484003BFA17 /* NinjaGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NinjaGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1945BF4F196C5484003BFA17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1945BF50196C5484003BFA17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1945BF52196C5484003BFA17 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		1945BF54196C5484003BFA17 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		1945BF56196C5484003BFA17 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		1945BF59196C5484003BFA17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,6 +38,8 @@
 		1945BF61196C5484003BFA17 /* NinjaGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NinjaGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1945BF66196C5484003BFA17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1945BF67196C5484003BFA17 /* NinjaGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinjaGameTests.swift; sourceTree = "<group>"; };
+		1945BF71196D4C00003BFA17 /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = sprites.atlas; sourceTree = "<group>"; };
+		195185D0196E9CC000BC124F /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,11 +82,12 @@
 			isa = PBXGroup;
 			children = (
 				1945BF50196C5484003BFA17 /* AppDelegate.swift */,
-				1945BF52196C5484003BFA17 /* GameScene.sks */,
 				1945BF54196C5484003BFA17 /* GameScene.swift */,
+				195185D0196E9CC000BC124F /* GameOverScene.swift */,
 				1945BF56196C5484003BFA17 /* GameViewController.swift */,
 				1945BF58196C5484003BFA17 /* Main.storyboard */,
 				1945BF5B196C5484003BFA17 /* Images.xcassets */,
+				1945BF71196D4C00003BFA17 /* sprites.atlas */,
 				1945BF4E196C5484003BFA17 /* Supporting Files */,
 			);
 			path = NinjaGame;
@@ -196,7 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1945BF5C196C5484003BFA17 /* Images.xcassets in Resources */,
-				1945BF53196C5484003BFA17 /* GameScene.sks in Resources */,
+				1945BF72196D4C00003BFA17 /* sprites.atlas in Resources */,
 				1945BF5A196C5484003BFA17 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,6 +220,7 @@
 			files = (
 				1945BF55196C5484003BFA17 /* GameScene.swift in Sources */,
 				1945BF57196C5484003BFA17 /* GameViewController.swift in Sources */,
+				195185D1196E9CC000BC124F /* GameOverScene.swift in Sources */,
 				1945BF51196C5484003BFA17 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +409,7 @@
 				1945BF6D196C5484003BFA17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1945BF6E196C5484003BFA17 /* Build configuration list for PBXNativeTarget "NinjaGameTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +418,7 @@
 				1945BF70196C5484003BFA17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
